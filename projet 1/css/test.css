@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(100, 116, 130);
+    padding: 10px;
+    text-align: center;
+}
+
+.card{
+    background-color: rgba(186, 191, 85, 0.436);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gride{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}

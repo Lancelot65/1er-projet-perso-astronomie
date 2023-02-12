@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(103, 121, 137);
+    font-weight: bold;
+}
+
+body{
+    background-image: url(https://maximeoudouxphotographie.fr/wp-content/uploads/2019/02/centre-voie-lactee-astrophoto-maxime-oudoux.jpg);
+    background-size: 100vw;
+    background-repeat: round;
+}
+
+.head{
+    background-color: rgb(85, 85, 117);
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(79, 114, 176);
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    transition: 1s;
+}
+
+nav a:hover{
+    color: rgb(43, 38, 171);
+    border-bottom: 2px solid rgb(43, 38, 171);
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: rgb(85, 85, 117);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+    color: rgb(43, 38, 171);
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+h1{
+    font-size: large;
+    font-family: 'Montserrat';
+    margin: 20px;
+    text-align: center;
+    color: rgb(38, 66, 115);
+}
+
+p.titre{
+    font-size: small;
+    font-family: 'Montserrat';
+    margin: 20px;
+    text-align: center;
+    color: rgb(132, 143, 160);
+}
+
+p{
+    font-size: small;
+    font-family: 'Montserrat';
+    text-align: center;
+    color: rgb(33, 55, 94);
+}
+
+.artemis{
+    background-image: url(https://www.nasa.gov/sites/default/files/styles/side_image/public/thumbnails/image/nhq202211160003.jpg?itok=Azttafrc);
+    width: auto;
+}
+
+.james{
+    background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/main_image_star-forming_region_carina_nircam_final-1280.jpg?itok=9hyNVMwe);
+    width: auto;
+}
+
+.superheavy{
+    background-image: url(../img/Screenshot\ 2023-02-11\ at\ 23-09-08\ SpaceX.png);
+    width: auto;
+}
+
+.falcon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Iridium-1_Launch_%2832312420015%29.jpg/420px-Iridium-1_Launch_%2832312420015%29.jpg);
+    width: auto;
+}
+
+.card{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+.card p{
+    color: rgb(216, 23, 23);
+}
+
+.card h1{
+    color: rgb(42, 89, 130);
+}
+
+.click{
+    text-decoration: none;
+}
